@@ -15,7 +15,7 @@ push-to-releases:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
         repository: demo/wercker
-        registry: https://phx.ocir.io
+        registry: https://phx.ocir.io/v1
         tag: latest
         cmd: node /pipeline/source/app.js
 
