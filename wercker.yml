@@ -14,7 +14,7 @@ push-to-releases:
     - internal/docker-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
-        repository: $DOCKER_REPO
+        repository: $DOCKER_REPOSITORY
         tag: latest
         cmd: node /pipeline/source/app.js
 
