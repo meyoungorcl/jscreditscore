@@ -16,7 +16,7 @@ push-to-releases:
         password: $DOCKER_PASSWORD
         repository: phx.ocir.io/demo/wercker2
         registry: https://phx.ocir.io/v2
-        tag: latest
+        tag: $WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT
         cmd: node /pipeline/source/app.js
 
 deploy-to-oke:
