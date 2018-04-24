@@ -14,7 +14,8 @@ push-to-releases:
     - internal/docker-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
-        repository: $DOCKER_REPOSITORY
+        repository: demo/wercker
+        registry: https://phx.ocir.io
         tag: latest
         cmd: node /pipeline/source/app.js
 
