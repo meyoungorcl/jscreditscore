@@ -14,8 +14,8 @@ push-to-releases:
     - internal/docker-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
-        repository: phx.ocir.io/demo/wercker/jscreditscore
-        registry: https://phx.ocir.io/v2
+        repository: iad.ocir.io/demo/marcie/jscreditscore
+        registry: https://iad.ocir.io/v2
         # tag: $WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT
         tag: latest
         cmd: node /pipeline/source/app.js
